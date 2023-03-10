@@ -4,9 +4,9 @@ I live in NYC where landlords are legally required to furnish the security depos
 within 14 days of the tenant moving out. After this period, the landlord forefeits any rights to any portion of 
 the deposit. It has been over a month in my case.
 
-I waited patiently for 1 month before following up with them. Multiple emails fell on deaf ears. Because of poor experiences in the past, I decided to spam them until they responded. I decided to use the Fibonacci number of the day to send that number of emails to a strategically selected set of email recipients. For example, I sent 1 email to 6 recipients on the first and second days. 3 emails to 6 recipients on the fourth day. etc, etc.
+I waited patiently for 1 month before following up with them. Multiple emails fell on deaf ears. Because of poor experiences in the past, I decided to bombard them with spam them until they respond. I chose to use the Fibonacci number of the day to send that number of emails to a strategically selected set of email recipients. For example, I sent 1 email to 6 recipients on the first and second days. 3 emails to 6 recipients on the fourth day. etc, etc.
 
-This is obviously unsustainable, and a waste of my time. So I built this program to automate bombarding people with emails. It's a simple express app with nodemailer (plus gmail).
+This is obviously unsustainable, and a waste of my time. So I built this program to automate shelling people with emails. It's a simple express app with nodemailer (plus gmail).
 
 # Notes
 This was built very quickly to get a job done. I'll improve on it over time to make it more user friendly. Ideally I'd like for anyone, dev and non-dev alike, to be able to get this up and running with little to no programming experience.
