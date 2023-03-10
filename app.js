@@ -36,6 +36,11 @@ const SCHEDULE = process.env.schedule;
 const PAYLOAD = process.env.payload;
 const TARGETS = process.env.targets.split(',');
 
+console.log(`TYPE: ${TYPE}`);
+console.log(`SCHEDULE: ${SCHEDULE}`);
+console.log(`PAYLOAD: ${PAYLOAD}`);
+console.log(`TARGETS: ${TARGETS}`);
+
 let subject = '';
 try {
   subject = fs.readFileSync('./subject.txt', 'utf8');
