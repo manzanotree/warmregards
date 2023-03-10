@@ -22,7 +22,7 @@ Because this was built quick and dirty, there are some rough edges. For now, it'
 ## Configuration
 To use gmail as the smtp server, follow the google-specific instructions here: https://alexb72.medium.com/how-to-send-emails-using-a-nodemailer-gmail-and-oauth2-fe19d66451f9
 
-Note the `client_id`, `client_secret`, and `refresh_token` values from above. We'll use them below.
+Note the `client_id`, `client_secret`, and `refresh_token` values from above. We'll use them below. It goes without saying, but don't share these with anyone. Take these to your grave.
 
 Create a `.env` file in the root. It should look like the following.
 ```
