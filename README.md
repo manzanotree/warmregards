@@ -4,7 +4,7 @@ I live in NYC where landlords are legally required to furnish the security depos
 within 14 days of the tenant moving out. After this period, the landlord forefeits any rights to any portion of 
 the deposit. It has been over a month in my case.
 
-I waited patiently for 1 month before following up with them. Multiple emails fell on deaf ears. Because of poor experiences in the past, I decided to bombard them with spam them until they respond. I chose to use the Fibonacci number of the day to send that number of emails to a strategically selected set of email recipients. For example, I sent 1 email to 6 recipients on the first and second days. 3 emails to 6 recipients on the fourth day. etc, etc.
+I waited patiently for 1 month before following up with them. Multiple emails fell on deaf ears. Because of poor experiences in the past, I decided to bombard them with polite spam until they respond. I chose to use the Fibonacci number of the day to send that number of emails to a strategically selected set of email recipients. For example, I sent 1 email to 6 recipients on the first and second days. 3 emails to 6 recipients on the fourth day. etc, etc.
 
 This is obviously unsustainable, and a waste of my time. So I built this program to automate shelling people with emails. It's a simple express app with nodemailer (plus gmail).
 
@@ -90,11 +90,15 @@ Stop with
 # Testing
 There's an endpoint to manually trigger an email send. Maybe you're crafting the perfect snarky remark and want to make sure it looks just right.
 
-Making a `GET` request to `localhost:8080/bombsaway` will send 1 email using config for recipients, email subject, and email body.
+This endpoint will always send to your configured user. In this case, your gmail address.
+Making a `GET` request to `localhost:8080/bombsaway` will send 1 email using config for email subject and email body.
 
 # To Do
+- Better main control. Run program, then start bombardment on keypress.
+- Improve how to run program in test mode.
+- Organize the code better.
 - Better kill process when email sends should terminate.
 - Make more configurable with different smtps.
 - Better cron options. Variable timing. Configurable start times.
-- Organize the code better.
 - Create nice CLI wizard thing.
+- Tests. 

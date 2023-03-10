@@ -135,6 +135,7 @@ function fibSend() {
 }
 
 app.get('/bombsaway', async (req, res) => {
+  mailOptions.to = process.env.user;
   transport.sendMail(mailOptions, function(err, result) {
     if (err) {
       res.status(400).json(err);
