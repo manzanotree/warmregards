@@ -1,0 +1,12 @@
+version: "3"
+services:
+  warmregards:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: nodemon app.js
+    ports:
+      - 8080:8080
+    volumes:
+      - /app/node_modules/
+      - ./:/app
