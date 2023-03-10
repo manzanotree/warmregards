@@ -1,7 +1,4 @@
-TODO
-https://alexb72.medium.com/how-to-send-emails-using-a-nodemailer-gmail-and-oauth2-fe19d66451f9
-
-# Context
+# Overview
 I built this to spam my previous scumbag landlord who ignored all inquiries about returning my security deposit.
 I live in NYC where landlords are legally required to furnish the security deposit and any itemized deductions 
 within 14 days of the tenant moving out. After this period, the landlord forefeits any rights to any portion of 
