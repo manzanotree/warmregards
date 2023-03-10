@@ -26,7 +26,7 @@ Note the `client_id`, `client_secret`, and `refresh_token` values from above. We
 
 Create a `.env` file in the root. It should look like the following.
 ```
-user={my_gmail_username}
+user={my_username@gmail.com}
 client_id={my_client_id}
 client_secret={my_client_secret}
 refresh_token={my_refresh_token}
@@ -36,10 +36,10 @@ schedule={minute|hour|day}
 targets=target1@example.com,target2@example.com
 ```
 
-`type` variable
+`type`
 - `bulk` - Send a specified amount of emails once.
 - `interval` - Send a specified amount of emails at each interval.
-- `fibonacci` - Send Fib-N emails every day. Caps at n=10 due to memory constraints.
+- `fibonacci` - Send Fib-N emails every day. Caps at N=10 due to memory constraints.
 
 `payload`
 - Set to an integer value that specifies the amount of emails to send per event. For example, `type=bulk` and `payload=5` would send 5 emails one time. There are reasonable maximums imposed to limit this value to avoid doing things like sending 10000 emails per minute. While I'm not against that kind of behavior, I have no idea how this program would behave. See `app.js` for these limits.
@@ -91,11 +91,11 @@ Stop with
 There's an endpoint to manually trigger an email send. Maybe you're crafting the perfect snarky remark and want to make sure it looks just right.
 
 This endpoint will always send to your configured user. In this case, your gmail address.
-Making a `GET` request to `localhost:8080/bombsaway` will send 1 email using config for email subject and email body.
+Making a `GET` request to `localhost:8080/bombsaway` will send 1 email using the subject and message from the `.txt` files configured above.
 
 # To Do
 - Better main control. Run program, then start bombardment on keypress.
-- Improve how to run program in test mode.
+- Improve how to run in test mode.
 - Organize the code better.
 - Better kill process when email sends should terminate.
 - Make more configurable with different smtps.
